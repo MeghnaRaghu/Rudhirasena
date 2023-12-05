@@ -9,7 +9,6 @@
         <thead class="bg-info">
             <tr>
                 <th scope="col">Name</th>
-                <th scope="col">Profile</th>
                 <th scope="col">Blood Group</th>
                 <th scope="col">Age</th>
                 <th scope="col">Disease</th>
@@ -21,7 +20,6 @@
             {% for t in patients %}
             <tr>
                 <td> {{t.get_name}}</td>
-                <td> <img src="{% static t.profile_pic.url %}" alt="Profile Pic" height="40px" width="40px" /></td>
                 <td>{{t.bloodgroup}}</td>
                 <td>{{t.age}}</td>
                 <td>{{t.disease}}</td>
@@ -38,10 +36,5 @@
     
     </table>
 </div>
-<!--
-developed By : sumit kumar
-facebook : fb.com/sumit.luv
-youtube : youtube.com/lazycoders
--->
 
 {% endblock content %}

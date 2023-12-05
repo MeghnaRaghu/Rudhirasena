@@ -3,6 +3,13 @@
 {% load widget_tweaks %}
 {%load static%}
 <head>
+    <style>
+          body{
+          background-image: url('{% static "image/R.JPEG" %}');
+          background-size: cover;
+
+          }
+      </style>
         <!-- Font special for pages-->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 
@@ -85,9 +92,5 @@
         </div>
     </div>
 </div>
-<!--
-developed By : sumit kumar
-facebook : fb.com/sumit.luv
-youtube : youtube.com/lazycoders
--->
+
 {% endblock content %}
